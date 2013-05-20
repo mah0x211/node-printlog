@@ -1,0 +1,22 @@
+{
+    "name": "printlog",
+    "description": "logging utility.",
+    "author": {
+        "name": "Masatoshi Teruya",
+        "url": "https://twitter.com/mah0x211"
+    },
+    "version": "0.1.0",
+    "main": "./printlog.js",
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/mah0x211/node-printlog.git"
+    },
+    "dependencies": {
+        "cli-color": ">=0.2.2"
+    },
+    "licenses": [
+        {
+            "type": "MIT"
+        }
+    ]
+}
