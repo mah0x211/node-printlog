@@ -64,13 +64,11 @@ function info( args ){
     colorLog( cc.green, args );
 }
 
-function PrintLog(){}
-util.inherits( PrintLog, cc );
-PrintLog.format = format;
-PrintLog.log = log;
-PrintLog.info = info;
-PrintLog.warn = warn;
-PrintLog.error = error;
+cc.format = format;
+cc.log = log;
+cc.info = info;
+cc.warn = warn;
+cc.error = error;
 
-module.exports = PrintLog;
+module.exports = cc;
 
