@@ -5,7 +5,7 @@
         "name": "Masatoshi Teruya",
         "url": "https://twitter.com/mah0x211"
     },
-    "version": "0.1.0",
+    "version": "0.1.1",
     "main": "./printlog.js",
     "repository": {
         "type": "git",

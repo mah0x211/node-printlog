@@ -7,7 +7,12 @@
  */
 "use strict";
 var util = require('util'),
-    cc = require('cli-color');
+    cc = require('cli-color'),
+    // constants
+    IGNORE_INSPECT = {
+        'string': true,
+        'number': true
+    };
 
 function isFormat( arg )
 {
@@ -17,13 +22,8 @@ function isFormat( arg )
 
 function toStr( args )
 {
-    var isRaw = {
-            'string': true,
-            'number': true
-        };
-    
     return args.map(function(item){
-        return isRaw[(typeof item)] ? item : util.inspect(item);
+        return IGNORE_INSPECT[(typeof item)] ? item : util.inspect(item);
     });
 }
 
